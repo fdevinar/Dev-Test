@@ -11,19 +11,16 @@
 
   * {
     color: $darkTextColor;
-    font-size: large;
+    font-size: 20px;
   }
 
+  .quill {
+    height: 4rem;
+  }
+  
   img.modal {
     width: 600px;
     height: 300px;
   }
-
-  // .modal {
-  //   position: fixed;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  // }
 
 }

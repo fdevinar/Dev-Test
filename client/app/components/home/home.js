@@ -23,3 +23,4 @@ let homeModule = angular.module('home', [
 .name;
 
 export default homeModule;
+
