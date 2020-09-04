@@ -3,8 +3,8 @@
 $primaryColor:   #0277bd;
 $accentColor:    #1de9b6;
 $bgColor:        #efefef;
-$darkBgColor:    #263238;
-$lightBgColor:   #37474f;
+$darkBgColor:    rgb(241,242,245);
+$lightBgColor:   #FFFFFF;
 $lightTextColor: #f5f5f5;
 $darkTextColor:  #212121;
 
@@ -14,5 +14,6 @@ body {
    // so setting top-level font-size to 62.5%
    // scales 1rem to equal 10px.
    font: 62.5% 'Roboto', sans-serif;
+   background-color: $lightBgColor;
 }
 

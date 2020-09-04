@@ -1,0 +1,29 @@
+@import '../common';
+
+
+.main {
+  background-color: $darkBgColor;
+  height: 50rem;
+  width: 50rem;
+  padding: 5rem;
+  padding-right: 0;
+  margin: 3rem;
+
+  * {
+    color: $darkTextColor;
+    font-size: large;
+  }
+
+  img.modal {
+    width: 600px;
+    height: 300px;
+  }
+
+  // .modal {
+  //   position: fixed;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // }
+
+}
