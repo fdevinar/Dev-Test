@@ -31,25 +31,36 @@ setTimeout( () =>
     logoModal.style.display = "none";
   });
   let logoSelected = document.getElementById('logoSelected');
-  document.getElementById('trade').addEventListener('click', function() {
-    logoSelected.setAttribute('src','https://tradetools.co/wp-content/uploads/2020/06/tradetools-logo-1.svg');
-    logoModal.style.display = "none";
-  });
-  document.getElementById('engie').addEventListener('click', function() {
-    logoSelected.setAttribute('src','https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1441449491/m90vfcboxyd8vbhatsmn.png');
-    logoModal.style.display = "none";
-  });
-  document.getElementById('porto').addEventListener('click', function() {
-    logoSelected.setAttribute('src','https://logospng.org/download/portobello/logo-portobello-cinza-256.png');
-    logoModal.style.display = "none";
-  });
-  document.getElementById('paper').addEventListener('click', function() {
-    logoSelected.setAttribute('src','http://www.bopapergroup.com/wp-content/themes/bopaper/img/group-269.svg');
-    logoModal.style.display = "none";
-  });
 
+let logos = [
+  {
+    name: 'trade',
+    image: 'https://tradetools.co/wp-content/uploads/2020/06/tradetools-logo-1.svg'
+  },
+  {
+    name: 'engie',
+    image: 'https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1441449491/m90vfcboxyd8vbhatsmn.png'
+  },
+  {
+    name: 'porto',
+    image: 'https://logospng.org/download/portobello/logo-portobello-cinza-256.png'
+  },
+  {
+    name: 'paper',
+    image: 'http://www.bopapergroup.com/wp-content/themes/bopaper/img/group-269.svg'
+  },
+];
+
+// ASSIGNS A PICTURE FOR EVERY ID
+logos.forEach((logo) => {
+  document.getElementById(logo.name).addEventListener('click', function() {
+    logoSelected.setAttribute('src',logo.image);
+    logoModal.style.display = "none";
+  });
+});
 
   //- BIG MODAL SELECTION
+
   let bigModal = document.getElementById("bigModal");
   // When the user clicks on the button, open the modal
   document.getElementById('bigBtn').addEventListener('click', function() {
@@ -60,21 +71,32 @@ setTimeout( () =>
     bigModal.style.display = "none";
   });
   let bigSelected = document.getElementById('bigSelected');
-  document.getElementById('office').addEventListener('click', function() {
-    bigSelected.setAttribute('src','https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
-    bigModal.style.display = "none";
-  });
-  document.getElementById('street').addEventListener('click', function() {
-    bigSelected.setAttribute('src','https://images.unsplash.com/photo-1487452066049-a710f7296400?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
-    bigModal.style.display = "none";
-  });
-  document.getElementById('traffic').addEventListener('click', function() {
-    bigSelected.setAttribute('src','https://images.unsplash.com/photo-1530685932526-48ec92998eaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
-    bigModal.style.display = "none";
-  });
-  document.getElementById('lights').addEventListener('click', function() {
-    bigSelected.setAttribute('src','https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
-    bigModal.style.display = "none";
+
+  let bigs = [
+    {
+      name: 'office',
+      image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+    },
+    {
+      name: 'street',
+      image: 'https://images.unsplash.com/photo-1487452066049-a710f7296400?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+    },
+    {
+      name: 'traffic',
+      image: 'https://images.unsplash.com/photo-1530685932526-48ec92998eaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+    },
+    {
+      name: 'lights',
+      image: 'https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+    },
+  ];
+
+// ASSIGNS A PICTURE FOR EVERY ID
+  bigs.forEach((big) => {
+    document.getElementById(big.name).addEventListener('click', function() {
+      bigSelected.setAttribute('src',big.image);
+      bigModal.style.display = "none";
+    });
   });
 
 }, 250 );
