@@ -1,21 +1,26 @@
 @import '../common';
 
-
 .main {
-  background-color: $darkBgColor;
-  height: 50rem;
+  background-color: $lightBgColor;
+  height: 100%;
   width: 50.7rem;
   padding: 5rem;
   padding-right: 0;
   margin: 3rem;
 
   * {
-    color: $darkTextColor;
     font-size: 20px;
   }
 
+  /* Line-height for Quill text */
   .quill {
-    height: 4rem;
+    height: 12rem;
+    width: 36rem;
+  }
+
+  .ql-color-gray {
+    color: silver;
+    font-weight: bold;
   }
   
     /* The Modal (background) */
@@ -39,6 +44,7 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    justify-content: center;
   }
 
   /* The Close Button */
@@ -56,7 +62,7 @@
     cursor: pointer;
   }
 
-  // 
+  /* Erases Button styling */ 
   button {
     border: none;
     background-color: transparent;

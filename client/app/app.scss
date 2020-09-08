@@ -1,7 +1,9 @@
 @import "common/common";
 
+html {
+  background-color: $darkBgColor;
+}
 .app {
   height: 100%;
-  background-color: $lightBgColor;
+  background-color: $darkBgColor;
 }
-
